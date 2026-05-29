@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Set-Location \"c:\\\\Users\\\\RahulKumarSoni\\\\Desktop\\\\NHCUP-2026\"; Start-Process powershell -ArgumentList \"-NoExit\", \"-Command\", \"npm run dev\" -WindowStyle Normal; Start-Sleep 3; Write-Output \"Dev server started\")",
+      "PowerShell(Get-ChildItem \"c:\\\\Users\\\\RahulKumarSoni\\\\Desktop\\\\NHCUP-2026\" -Force | Where-Object { $_.Name -ne 'node_modules' -and $_.Name -ne '.claude' } | Select-Object Name)",
+      "PowerShell(New-Item -ItemType Directory -Force \"c:\\\\Users\\\\RahulKumarSoni\\\\Desktop\\\\NHCUP-2026\\\\src\\\\pages\")"
+    ]
+  }
+}
